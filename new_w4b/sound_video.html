@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add videos, music, and forms</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/sound_video.css" />
+
+    <style>
+      /* css for adding video to the background */
+      /* #bg-video {
+        object-fit: cover;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: ?;
+      } */
+
+      body {
+        margin: 15px;
+      }
+
+      h1 {
+        font-size: 35px;
+        text-decoration: underline;
+      }
+      .navlink {
+        display: inline-block;
+        padding-right: 20px;
+        padding-bottom: 20px;
+      }
+
+      .navlink > a {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add videos, music, and forms</h1>
+
+    <nav>
+      <ul class="nav nav-tabs mt-3 mb-4">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="daily_challenge_1.html"
+            >Daily Challenge 1</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="daily_challenge_2.html"
+            >Daily Challenge 2</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="take_home_day2.html">Take Home Day 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="daily_challenge_3.html"
+            >Daily Challenge 3</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="daily_challenge_4.html"
+            >Daily Challenge 4</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="daily_challenge_5.html"
+            >Daily Challenge 5</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="take_home_day5.html">Take Home Day 5</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="sound_video.html"
+            >Sound & Video</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <h2>Adding Audio</h2>
+
+    <audio controls>
+      <source src="music/bensound-creativeminds.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Adding Videos</h2>
+
+    <video width="400" height="240" controls poster="image/Star Arch.jpg">
+      <source src="video/production ID_4881727.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- adding a video as a background -->
+    <!-- <video id="bg_video" autoplay loop>
+      <source src="video/production ID_4881727.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video> -->
+
+    <h2>Creating Forms</h2>
+
+    <form name="registration-form">
+      <h3>Registration</h3>
+
+      <input
+        type="username"
+        name="usernam"
+        id="username"
+        placeholder="desired username"
+      />
+
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="enter a password"
+      />
+
+      <input
+        type="password"
+        name="password_confirm"
+        id="password_confirm"
+        placeholder="re-enter a password"
+      />
+
+      <select name="state" is="state">
+        <option value="California">CA</option>
+        <option value="Alaska">Ak</option>
+        <option value="Alabama">Al</option>
+        <option value="Washington">Wa</option>
+        <option value="Missori">Mi</option>
+      </select>
+
+      <div>
+        <p>Fruits</p>
+        <lable><input type="radio" name="favorite_fruit" />Papaya</lable>
+        <lable><input type="radio" name="favorite_fruit" />Pineapple</lable>
+        <lable><input type="radio" name="favorite_fruit" />Apple</lable>
+        <lable><input type="radio" name="favorite_fruit" />Mango</lable>
+        <lable><input type="radio" name="favorite_fruit" />Watermelon</lable>
+      </div>
+
+      <div>
+        <p>Veggies</p>
+        <lable><input type="radio" name="favorite_veggies" />Broccoli</lable>
+        <lable><input type="radio" name="favorite_veggies" />Lettuce</lable>
+        <lable><input type="radio" name="favorite_veggies" />Asparagus</lable>
+        <lable><input type="radio" name="favorite_veggies" />Coliflower</lable>
+      </div>
+
+      <div>
+        <p>Movies</p>
+        <lable
+          ><input
+            type="checkbox"
+            name="favorite_movies"
+          />IngloriousBastereds</lable
+        >
+        <lable
+          ><input type="checkbox" name="favorite_movies" />Mad Max: Furry
+          Road</lable
+        >
+        <lable
+          ><input type="checkbox" name="favorite_movies" />The Princess
+          Bride</lable
+        >
+        <lable
+          ><input type="checkbox" name="favorite_movies" />Forest Gump</lable
+        >
+      </div>
+
+      <!-- <input type="submit" value="Register Now!" /> -->
+      <button>Register Now!</button>
+    </form>
+
+    <form name="login-form" action="https://www.google.com" action="Get">
+      <!-- you can have more than one on a page -->
+      <h3>Log In</h3>
+
+      <label for="username">Username</label>
+      <input type="text" id="un" name="username" placeholder="Enter Username" />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email" />
+
+      <lable for="password">Password</lable>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Give me your password"
+      />
+
+      <!-- input submit and button are the same -->
+      <input type="submit" value="Let's Log In!" />
+      <button>Let's Go!</button>
+    </form>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12612.519447579098!2d-122.4190082302246!3d37.78699630000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e55ad72fb%3A0x1602e4aeaa4452c!2sAmerican%20Conservatory%20Theater!5e0!3m2!1sen!2sus!4v1648692624826!5m2!1sen!2sus"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
