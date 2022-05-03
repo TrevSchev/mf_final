@@ -26,10 +26,6 @@
         z-index: ?;
       } */
 
-      body {
-        margin: 15px;
-      }
-
       h1 {
         font-size: 35px;
         text-decoration: underline;
@@ -49,9 +45,87 @@
     </style>
   </head>
   <body>
-    <h1>Add videos, music, and forms</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav me-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >MF Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">First Website</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./../bootstrap/index.html"
+                >Bootstrap Layout</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./../paralax/index.html">Paralax</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Graphic Design
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a
+                    class="dropdown-item mb-2"
+                    href="./../graphic_design/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item mb-2"
+                    href="./../graphic_design/about.html"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./../graphic_design/contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <nav>
+    <div class="ms-3">
+      <h1>Add videos, music, and forms</h1>
+
       <ul class="nav nav-tabs mt-3 mb-4">
         <li class="nav-item">
           <a class="nav-link" href="index.html">Home</a>
@@ -93,136 +167,144 @@
           >
         </li>
       </ul>
-    </nav>
 
-    <h2>Adding Audio</h2>
+      <h2>Adding Audio</h2>
 
-    <audio controls>
-      <source src="music/bensound-creativeminds.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+      <audio controls>
+        <source src="music/bensound-creativeminds.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
 
-    <h2>Adding Videos</h2>
+      <h2>Adding Videos</h2>
 
-    <video width="400" height="240" controls poster="image/Star Arch.jpg">
-      <source src="video/production ID_4881727.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+      <video width="400" height="240" controls poster="image/Star Arch.jpg">
+        <source src="video/production ID_4881727.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
 
-    <!-- adding a video as a background -->
-    <!-- <video id="bg_video" autoplay loop>
+      <!-- adding a video as a background -->
+      <!-- <video id="bg_video" autoplay loop>
       <source src="video/production ID_4881727.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video> -->
 
-    <h2>Creating Forms</h2>
+      <h2>Creating Forms</h2>
 
-    <form name="registration-form">
-      <h3>Registration</h3>
+      <form name="registration-form">
+        <h3>Registration</h3>
 
-      <input
-        type="username"
-        name="usernam"
-        id="username"
-        placeholder="desired username"
-      />
+        <input
+          type="username"
+          name="usernam"
+          id="username"
+          placeholder="desired username"
+        />
 
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="enter a password"
-      />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="enter a password"
+        />
 
-      <input
-        type="password"
-        name="password_confirm"
-        id="password_confirm"
-        placeholder="re-enter a password"
-      />
+        <input
+          type="password"
+          name="password_confirm"
+          id="password_confirm"
+          placeholder="re-enter a password"
+        />
 
-      <select name="state" is="state">
-        <option value="California">CA</option>
-        <option value="Alaska">Ak</option>
-        <option value="Alabama">Al</option>
-        <option value="Washington">Wa</option>
-        <option value="Missori">Mi</option>
-      </select>
+        <select name="state" is="state">
+          <option value="California">CA</option>
+          <option value="Alaska">Ak</option>
+          <option value="Alabama">Al</option>
+          <option value="Washington">Wa</option>
+          <option value="Missori">Mi</option>
+        </select>
 
-      <div>
-        <p>Fruits</p>
-        <lable><input type="radio" name="favorite_fruit" />Papaya</lable>
-        <lable><input type="radio" name="favorite_fruit" />Pineapple</lable>
-        <lable><input type="radio" name="favorite_fruit" />Apple</lable>
-        <lable><input type="radio" name="favorite_fruit" />Mango</lable>
-        <lable><input type="radio" name="favorite_fruit" />Watermelon</lable>
-      </div>
+        <div>
+          <p>Fruits</p>
+          <lable><input type="radio" name="favorite_fruit" />Papaya</lable>
+          <lable><input type="radio" name="favorite_fruit" />Pineapple</lable>
+          <lable><input type="radio" name="favorite_fruit" />Apple</lable>
+          <lable><input type="radio" name="favorite_fruit" />Mango</lable>
+          <lable><input type="radio" name="favorite_fruit" />Watermelon</lable>
+        </div>
 
-      <div>
-        <p>Veggies</p>
-        <lable><input type="radio" name="favorite_veggies" />Broccoli</lable>
-        <lable><input type="radio" name="favorite_veggies" />Lettuce</lable>
-        <lable><input type="radio" name="favorite_veggies" />Asparagus</lable>
-        <lable><input type="radio" name="favorite_veggies" />Coliflower</lable>
-      </div>
+        <div>
+          <p>Veggies</p>
+          <lable><input type="radio" name="favorite_veggies" />Broccoli</lable>
+          <lable><input type="radio" name="favorite_veggies" />Lettuce</lable>
+          <lable><input type="radio" name="favorite_veggies" />Asparagus</lable>
+          <lable
+            ><input type="radio" name="favorite_veggies" />Coliflower</lable
+          >
+        </div>
 
-      <div>
-        <p>Movies</p>
-        <lable
-          ><input
-            type="checkbox"
-            name="favorite_movies"
-          />IngloriousBastereds</lable
-        >
-        <lable
-          ><input type="checkbox" name="favorite_movies" />Mad Max: Furry
-          Road</lable
-        >
-        <lable
-          ><input type="checkbox" name="favorite_movies" />The Princess
-          Bride</lable
-        >
-        <lable
-          ><input type="checkbox" name="favorite_movies" />Forest Gump</lable
-        >
-      </div>
+        <div>
+          <p>Movies</p>
+          <lable
+            ><input
+              type="checkbox"
+              name="favorite_movies"
+            />IngloriousBastereds</lable
+          >
+          <lable
+            ><input type="checkbox" name="favorite_movies" />Mad Max: Furry
+            Road</lable
+          >
+          <lable
+            ><input type="checkbox" name="favorite_movies" />The Princess
+            Bride</lable
+          >
+          <lable
+            ><input type="checkbox" name="favorite_movies" />Forest Gump</lable
+          >
+        </div>
 
-      <!-- <input type="submit" value="Register Now!" /> -->
-      <button>Register Now!</button>
-    </form>
+        <!-- <input type="submit" value="Register Now!" /> -->
+        <button>Register Now!</button>
+      </form>
 
-    <form name="login-form" action="https://www.google.com" action="Get">
-      <!-- you can have more than one on a page -->
-      <h3>Log In</h3>
+      <form name="login-form" action="https://www.google.com" action="Get">
+        <!-- you can have more than one on a page -->
+        <h3>Log In</h3>
 
-      <label for="username">Username</label>
-      <input type="text" id="un" name="username" placeholder="Enter Username" />
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="un"
+          name="username"
+          placeholder="Enter Username"
+        />
 
-      <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="Enter Email" />
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" />
 
-      <lable for="password">Password</lable>
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Give me your password"
-      />
+        <lable for="password">Password</lable>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Give me your password"
+        />
 
-      <!-- input submit and button are the same -->
-      <input type="submit" value="Let's Log In!" />
-      <button>Let's Go!</button>
-    </form>
+        <!-- input submit and button are the same -->
+        <input type="submit" value="Let's Log In!" />
+        <button>Let's Go!</button>
+      </form>
 
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12612.519447579098!2d-122.4190082302246!3d37.78699630000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e55ad72fb%3A0x1602e4aeaa4452c!2sAmerican%20Conservatory%20Theater!5e0!3m2!1sen!2sus!4v1648692624826!5m2!1sen!2sus"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+      <h2>Embedded Map</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12612.519447579098!2d-122.4190082302246!3d37.78699630000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e55ad72fb%3A0x1602e4aeaa4452c!2sAmerican%20Conservatory%20Theater!5e0!3m2!1sen!2sus!4v1648692624826!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
