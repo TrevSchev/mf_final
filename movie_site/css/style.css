@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     background-color: #14181b;
@@ -8,8 +10,12 @@ header {
     width: 100%;
 }
 
-.himg {
-    width: 33%;
+/* .himg {
+    width: 24.7%;
+} */
+
+.carousel2 {
+    width: 24.7%;
 }
 
 .gd_nav {
@@ -38,20 +44,20 @@ header {
     background-color: #bd8d26;
 }
 
-.gd_nav .gd_ul li ul{
-    /* border: 2px solid red; */
-    display: none;
-    padding: 10px;
-    margin-top: 10px;
-    position: absolute;
-    background-color: #d3a72f;
-    border-radius: 0px 0px 5px 5px;
+@media only screen and (max-width: 800px) {
+    .gd_nav .gd_ul{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .hreel {
+        display: none;
+    }
 }
 
-.gd_nav .gd_ul li ul li{
-    padding: 10px;
-}
-
-.gd_nav .gd_ul li:hover ul {
-    display: block;
+@media only screen and (min-width: 800px) {
+    .creel {
+        display: none;
+    }
+    
 }
