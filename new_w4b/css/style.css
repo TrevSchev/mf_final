@@ -1,0 +1,20 @@
+@media only screen and (max-width: 1000px) {
+    .tabs {
+        text-align: center;
+    }
+
+    .tabs ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tabs ul li {
+        margin-bottom: 5px;
+    }
+
+}
+
+h1 {
+    font-size: 35px;
+    text-decoration: underline;
+  }

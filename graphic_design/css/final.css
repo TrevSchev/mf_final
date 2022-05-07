@@ -118,6 +118,10 @@
         #center_home_covers {
             flex-flow: row wrap;
         }
+        .gd_nav .gd_ul{
+            text-align: center;
+            font-size: 25px;
+        }
     }
 
     .image_container{

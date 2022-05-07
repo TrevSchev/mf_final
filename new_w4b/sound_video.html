@@ -14,6 +14,8 @@
     />
     <link rel="stylesheet" href="./css/sound_video.css" />
 
+    <link rel="stylesheet" href="./css/style.css" />
+
     <style>
       /* css for adding video to the background */
       /* #bg-video {
@@ -25,11 +27,6 @@
         height: 100vh;
         z-index: ?;
       } */
-
-      h1 {
-        font-size: 35px;
-        text-decoration: underline;
-      }
     </style>
   </head>
   <body>
@@ -117,49 +114,54 @@
     </nav>
 
     <div class="mx-3">
-      <h1>Add videos, music, and forms</h1>
+      <div class="tabs">
+        <h1>Add videos, music, and forms</h1>
 
-      <ul class="nav nav-tabs mt-3 mb-4">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="daily_challenge_1.html"
-            >Daily Challenge 1</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="daily_challenge_2.html"
-            >Daily Challenge 2</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="take_home_day2.html">Take Home Day 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="daily_challenge_3.html"
-            >Daily Challenge 3</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="daily_challenge_4.html"
-            >Daily Challenge 4</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="daily_challenge_5.html"
-            >Daily Challenge 5</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="take_home_day5.html">Take Home Day 5</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="sound_video.html"
-            >Sound & Video</a
-          >
-        </li>
-      </ul>
+        <ul class="nav nav-tabs mt-3 mb-4">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="daily_challenge_1.html"
+              >Daily Challenge 1</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="daily_challenge_2.html"
+              >Daily Challenge 2</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="take_home_day2.html">Take Home Day 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="daily_challenge_3.html"
+              >Daily Challenge 3</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="daily_challenge_4.html"
+              >Daily Challenge 4</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="daily_challenge_5.html"
+              >Daily Challenge 5</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="take_home_day5.html">Take Home Day 5</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="sound_video.html"
+              >Sound & Video</a
+            >
+          </li>
+        </ul>
+      </div>
 
       <h2>Adding Audio</h2>
 
@@ -170,7 +172,7 @@
 
       <h2>Adding Videos</h2>
 
-      <video width="400" height="240" controls poster="image/Star Arch.jpg">
+      <video width="400" height="240" controls poster="image/stararch.jpg">
         <source src="video/production ID_4881727.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -288,15 +290,17 @@
       </form>
 
       <h2>Embedded Map</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12612.519447579098!2d-122.4190082302246!3d37.78699630000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e55ad72fb%3A0x1602e4aeaa4452c!2sAmerican%20Conservatory%20Theater!5e0!3m2!1sen!2sus!4v1648692624826!5m2!1sen!2sus"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <div class="width">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12612.519447579098!2d-122.4190082302246!3d37.78699630000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e55ad72fb%3A0x1602e4aeaa4452c!2sAmerican%20Conservatory%20Theater!5e0!3m2!1sen!2sus!4v1648692624826!5m2!1sen!2sus"
+          width="450"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
 
     <script
