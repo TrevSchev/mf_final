@@ -1,4 +1,6 @@
-
+body {
+    background-image: linear-gradient(#92B2BF, #C29497);
+}
 h1 {
     text-shadow: -2px -1px rgb(32, 32, 32);
     color: #f0f0f0;
