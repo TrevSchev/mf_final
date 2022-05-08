@@ -4,9 +4,3 @@
     padding-bottom: 100px;
     padding-top: 50px;
 }
-
-@media only screen and (max-width: 1000px) {
-    .wrap {
-        flex-flow: row wrap;
-    }
-}
