@@ -99,6 +99,26 @@ footer p {
     color: #c9a0a0;
 }
 
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
+.icons_container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icon {
+    width: 45px;
+    margin-right: 10px;
+    background-color: #a58383;
+    padding: 10px;
+    border-radius: 100%;
+}
+
 
 @media only screen and (max-width: 600px) {
     p {
