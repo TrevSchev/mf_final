@@ -79,6 +79,10 @@ p {
     color: #ececec;
 }
 
+.btn:hover {
+    background-color: #691f20;
+}
+
 footer {
     position: relative;
     left: 0;
