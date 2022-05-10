@@ -8,6 +8,16 @@ header {
     width: 100%;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.logo img{
+    width: 80%;
+}
+
 p, h1, h2 {
     color: #ccc;
 }
@@ -63,6 +73,14 @@ h2 {
     .hreel {
         display: none;
     }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -85,17 +103,10 @@ h2 {
     opacity: .5;
 }
 
-.site_title {
-    z-index: 1;
-    position: relative;
-    font-size: 50px;
-    text-shadow: -5px 5px 5px #d3a72f;
-}
-
 .para {
     width: 100%;
     background-color: rgb(26, 26, 26, 0.7);
-    box-shadow: -2px 2px 2px #d3a72f;;
+    box-shadow: -2px 2px 2px #d3a72f;
     padding: 50px;
     font-size: 18px;
     line-height: 2;
