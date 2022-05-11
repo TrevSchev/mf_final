@@ -60,7 +60,7 @@ p {
     background-color: #bd8d26;
 }
 
-.little_miss_sunshine {
+#little_miss_sunshine {
     display: flex;
     flex-flow: row wrap;
     gap: 50px
@@ -70,29 +70,29 @@ p {
     width: 45%;
 }
 
-.little_miss_sunshine .image img {
+#little_miss_sunshine .image img {
     /* border: 2px solid red; */
     width: 100%;
 }
 
-.little_miss_sunshine .paragraph {
+#little_miss_sunshine .paragraph {
     /* border: 2px solid red; */
     width: 50%;
     line-height: 2;
 }
 
-.mad_max {
+#mad_max {
     display: flex;
     flex-flow: row wrap;
     gap: 50px
 }
 
-.mad_max .image img {
+#mad_max .image img {
     /* border: 2px solid red; */
     width: 100%;
 }
 
-.mad_max .paragraph {
+#mad_max .paragraph {
     /* border: 2px solid red; */
     width: 50%;
     line-height: 2;
@@ -113,15 +113,15 @@ hr {
         width: 100%;
     }
 
-    .little_miss_sunshine .paragraph {
+    #little_miss_sunshine .paragraph {
         width: 100%;
     }
 
-    .mad_max .paragraph {
+    #mad_max .paragraph {
         width: 100%;
     }
 
-    .mad_max {
+    #mad_max {
         flex-wrap: wrap-reverse;
     }
     
@@ -147,15 +147,15 @@ hr {
         width: 100%;
     }
 
-    .little_miss_sunshine .paragraph {
+    #little_miss_sunshine .paragraph {
         width: 100%;
     }
     
-    .mad_max .paragraph {
+    #mad_max .paragraph {
         width: 100%;
     }
 
-    .mad_max {
+    #mad_max {
         flex-wrap: wrap-reverse;
     }
 }

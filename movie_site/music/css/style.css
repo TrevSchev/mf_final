@@ -60,7 +60,7 @@ p {
     background-color: #bd8d26;
 }
 
-.the_hateful_eight {
+#the_hateful_eight {
     display: flex;
     flex-flow: row wrap;
     gap: 50px
@@ -70,29 +70,29 @@ p {
     width: 45%;
 }
 
-.the_hateful_eight .image img {
+#the_hateful_eight .image img {
     /* border: 2px solid red; */
     width: 100%;
 }
 
-.the_hateful_eight .paragraph {
+#the_hateful_eight .paragraph {
     /* border: 2px solid red; */
     width: 50%;
     line-height: 2;
 }
 
-.moneyball {
+#moneyball {
     display: flex;
     flex-flow: row wrap;
     gap: 50px
 }
 
-.moneyball .image img {
+#moneyball .image img {
     /* border: 2px solid red; */
     width: 100%;
 }
 
-.moneyball .paragraph {
+#moneyball .paragraph {
     /* border: 2px solid red; */
     width: 50%;
     line-height: 2;
@@ -113,15 +113,15 @@ hr {
         width: 100%;
     }
 
-    .the_hateful_eight .paragraph {
+    #the_hateful_eight .paragraph {
         width: 100%;
     }
 
-    .moneyball .paragraph {
+    #moneyball .paragraph {
         width: 100%;
     }
 
-    .moneyball {
+    #moneyball {
         flex-wrap: wrap-reverse;
     }
     
@@ -147,15 +147,15 @@ hr {
         width: 100%;
     }
 
-    .the_hateful_eight .paragraph {
+    #the_hateful_eight .paragraph {
         width: 100%;
     }
     
-    .moneyball .paragraph {
+    #moneyball .paragraph {
         width: 100%;
     }
 
-    .moneyball {
+    #moneyball {
         flex-wrap: wrap-reverse;
     }
 }
