@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    background-color: #14181b;
+}
+
+header {
+    background-color: #4d4431;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.logo img{
+    width: 80%;
+}
+
+p, h1, h2 {
+    color: #ccc;
+}
+
+h2 {
+ margin-bottom: 20px;
+}
+
+.carousel2 {
+    width: 24.6%;
+}
+
+.gd_nav {
+    background-color: #d3a72f;
+    width: 100%;
+    height: 65px;
+}
+
+.gd_nav .gd_ul li {
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    font-family: serif;
+}
+
+.gd_nav .gd_ul a {
+    text-decoration: none;
+    color: #1A1A1A;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.gd_nav .gd_ul a:hover{
+    color: #1A1A1A;
+    background-color: #bd8d26;
+}
+
+.the_hateful_eight {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 50px
+}
+
+.image {
+    width: 45%;
+}
+
+.the_hateful_eight .image img {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.the_hateful_eight .paragraph {
+    /* border: 2px solid red; */
+    width: 50%;
+    line-height: 2;
+}
+
+.moneyball {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 50px
+}
+
+.moneyball .image img {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.moneyball .paragraph {
+    /* border: 2px solid red; */
+    width: 50%;
+    line-height: 2;
+}
+
+hr {
+    color: #bd8d26;
+}
+
+@media only screen and (max-width: 800px) {
+    .gd_nav .gd_ul{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    
+    .image {
+        width: 100%;
+    }
+
+    .the_hateful_eight .paragraph {
+        width: 100%;
+    }
+
+    .moneyball .paragraph {
+        width: 100%;
+    }
+
+    .moneyball {
+        flex-wrap: wrap-reverse;
+    }
+    
+    .carousel2 {
+        width: 49%;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .hreel {
+        display: none;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .the_hateful_eight .paragraph {
+        width: 100%;
+    }
+    
+    .moneyball .paragraph {
+        width: 100%;
+    }
+
+    .moneyball {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .single_reel {
+        display: none;
+    }
+
+}
